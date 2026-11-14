@@ -557,7 +557,6 @@
     };
     
     function configureLink(element, url) {
-      alert("asdf2");
       if (!url) {
         element.setAttribute("aria-disabled", "true");
         element.title = "Link not configured";
@@ -575,6 +574,7 @@
       } catch {
         element.title = "Please configure a valid HTTPS URL";
       }
+      alert("asdf3");
     }
 
     configureLink(document.getElementById("booking-link"), LINKS.booking);
