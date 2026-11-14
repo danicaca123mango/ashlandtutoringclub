@@ -334,7 +334,7 @@
 
     <main>
       <section class="hero">
-        <h1>Ashland Tutoring Club 8</h1>
+        <h1>Ashland Tutoring Club 10</h1>
         <p>Free Tutoring for K-8th!</p>
         <div class="actions">
           <a class="button outline" href="#home/about">Learn More</a>
@@ -498,6 +498,7 @@
       <div class="donation-visual">
         <div class="donation-placeholder">gofundme</div>
         <a id="donation-link" class="button">Link to GoFundMe</a>
+        <p id="donation-note">Donation link has not been configured yet.</p>
       </div>
     </main>
   </section>
@@ -566,7 +567,7 @@
       try {
         const parsed = new URL(url);
 
-        // if (parsed.protocol !== "https:") return;
+        if (parsed.protocol !== "https:") return;
 
         element.href = parsed.href;
         element.target = "_blank";
